@@ -1,0 +1,21 @@
+[project]
+name = "sistema_de_inventario"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aram",email = "xboxaramxbox@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit (>=1.52.2,<2.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "sistema_de_inventario", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
